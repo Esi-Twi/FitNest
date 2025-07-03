@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: #FACC15; 
+    --charcoal-gray: #1F2937;
+    --light-cream: #FFFBEB;
+    --sky-blue: #38BDF8;
+    --emerald-green: #10B981;
+    --soft-warning: #EF4444;
+    --body-text: #111827;
+    --muted-text: #9CA3AF;
+}
+
+@font-face {
+    font-family: "Cinzel";
+    src: url('./fonts/CinzelDecorative-Black.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cinzel";
+    src: url('./fonts/CinzelDecorative-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cinzel";
+    src: url('./fonts/CinzelDecorative-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--body-text);
+    background-color: var(--light-cream);
+}
+
+button {
+    background-color: var(--primary-color);
+}
+
