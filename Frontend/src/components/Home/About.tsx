@@ -1,4 +1,4 @@
-
+import { Link } from "react-router";
 
 
 const About = () => {
@@ -23,7 +23,7 @@ const About = () => {
           <h1>More Than a Gym</h1>
           <p>We're a Community Committed to Your Strength, Health, and Confidence</p>
           <p className="ab-desc-long">FitNest is a modern, high-energy fitness center in Accra, committed to helping people of all ages and fitness levels reach their goals. Whether you're training for strength, endurance, weight loss, or flexibility we've got your back.</p>
-          <button>EXPLORE PROGRAMS</button>
+          <Link to='#'>EXPLORE PROGRAMS</Link>
         </div>
 
         <div className="ab-stats">

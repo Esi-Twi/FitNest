@@ -15,15 +15,16 @@ const Hero = () => {
           <p>Achieve your fitness goals with expert trainers and <br /> state-of-the-art equipment.</p>
         </div>
 
-        <Link to="#">
-          <p>JOIN US</p>
-          <div>
+        <div className='hero-button'>
+          <Link to='#'>
+            <p>JOIN US</p>
             <img src="../../assets/icons/right-arrow.png" />
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
 
-    </div>
+    </div >
+
   );
 };
 
