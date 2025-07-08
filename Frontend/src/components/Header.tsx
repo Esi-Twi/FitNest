@@ -14,25 +14,20 @@ const Header = () => {
             <li><Link to="/membership">Membership</Link></li>
 
             {/* dropdown */}
-            <li><a href="">Gym Benefits</a></li>
-
             <li className="dropdown">
-              <a className="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="apps-chat.html#" role="button" aria-haspopup="false" aria-expanded="false">
-                <span className="align-middle d-none d-lg-inline-block">English</span> <i className="mdi mdi-chevron-down d-none d-sm-inline-block align-middle"></i>
+              <a className="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="apps-chat.html" role="button" aria-haspopup="false" aria-expanded="false">
+                <span className="align-middle d-none d-lg-inline-block">Gym Benefits</span> <i className="mdi mdi-chevron-down d-none d-sm-inline-block align-middle"></i>
               </a>
 
-              <div className="dropdown-menu dropdown-menu-end dropdown-menu-animated">
-                <a href="#" className="dropdown-item">
-                </a>
+              <div className="header-list dropdown-menu dropdown-menu-end dropdown-menu-animated">
+                <Link to="" className="dropdown-item">Programs
+                </Link>
 
-                <a href="#" className="dropdown-item">
-                </a>
+                <Link to="" className="dropdown-item">Blogs
+                </Link>
 
-                <a href="#" className="dropdown-item">
-                </a>
-
-                <a href="" className="dropdown-item">
-                </a>
+                <Link to="" className="dropdown-item">Gallery
+                </Link>
               </div>
             </li>
           </ul>

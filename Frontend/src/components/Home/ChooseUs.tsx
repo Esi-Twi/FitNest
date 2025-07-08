@@ -11,7 +11,7 @@ const ChooseUs: React.FunctionComponent<IChooseUsProps> = () => {
       <div className='row gap-4'>
         <div className='col'>
           <div>
-            <img src='../../assets/icons/star.png'/>
+            <img src='../../assets/icons/systems.png'/>
           </div>
 
           <div>
@@ -22,7 +22,7 @@ const ChooseUs: React.FunctionComponent<IChooseUsProps> = () => {
 
          <div className='col'>
           <div>
-            <img src='../../assets/icons/star.png'/>
+            <img src='../../assets/icons/coach.png'/>
           </div>
 
           <div>
@@ -33,7 +33,7 @@ const ChooseUs: React.FunctionComponent<IChooseUsProps> = () => {
 
          <div className='col'>
           <div>
-            <img src='../../assets/icons/star.png'/>
+            <img src='../../assets/icons/availability.png'/>
           </div>
 
           <div>
@@ -44,7 +44,7 @@ const ChooseUs: React.FunctionComponent<IChooseUsProps> = () => {
 
          <div className='col'>
           <div>
-            <img src='../../assets/icons/star.png'/>
+            <img src='../../assets/icons/coach.png'/>
           </div>
 
           <div>
@@ -55,7 +55,7 @@ const ChooseUs: React.FunctionComponent<IChooseUsProps> = () => {
 
          <div className='col'>
           <div>
-            <img src='../../assets/icons/star.png'/>
+            <img src='../../assets/icons/treatment.png'/>
           </div>
 
           <div>

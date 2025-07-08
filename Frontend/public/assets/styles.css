@@ -106,8 +106,6 @@ p {
     font-size: 18px;
     padding: 0 25px;
 }
-
-
 .header-contact {
     background-color: var(--primary-color);
     color: var(--body-text);
@@ -115,6 +113,10 @@ p {
     border-radius: 5px;
     padding: 5px 25px;
     font-weight: bold;
+}
+.header-list a {
+    color: var(--body-text) !important;
+    padding: 10px 0; 
 }
 
 
@@ -339,10 +341,53 @@ p {
     font-size: 64px;
 }
 .choose-us .row .col {
-    background-color: var(--sky-blue);
+    background-color: rgba(119, 109, 206, 0.5);
     border-radius: 8px;
     padding: 15px 10px;
 }
-
-
-
+.choose-us .row .col div:first-child {
+    padding: 10px; 
+    border-radius: 50%;
+    width: 90px; 
+    height: 90px;
+    background-color: var(--emerald-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choose-us .row .col img {
+    width: 60px;
+}
+.choose-us .row .col div h3 {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-top: 5px ;
+}
+.choose-us .row .col div p {
+    color: white;
+    margin-top: -6px;
+    font-size: 14px;
+}
+/* -----------hero gallery section home page */
+.hero-gallery {
+    height: 90vh;
+    padding: 8vh 5%; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+}
+.hero-gallery .v2 {
+    width: 640px;
+    height: 66vh;
+}
+.hero-gallery .v1,
+.hero-gallery .v3 {
+    width: 300px;
+}
+.hero-gallery img:hover {
+    transform: scale(1.05);
+    transition: all 800ms ease-in-out;
+}

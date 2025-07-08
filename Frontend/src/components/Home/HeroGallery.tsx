@@ -5,7 +5,11 @@ interface IHeroGalleryProps {
 
 const HeroGallery: React.FunctionComponent<IHeroGalleryProps> = () => {
   return (
-    <>hero gallery</>
+    <div className='hero-gallery'>
+      <img className='v1' src='../../assets/images/skipping.jpg' />
+      <img className='v2' src='../../assets/images/dumbells.jpg' />
+      <img className='v3' src='../../assets/images/ropes2.jpg' />
+    </div>
   );;
 };
 
