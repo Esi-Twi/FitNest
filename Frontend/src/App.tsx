@@ -12,8 +12,22 @@ import Programs from './pages/general/Programs'
 import ErrorPage from './pages/ErrorPage'
 
 
+//imports for dashboard ----supervisor
+import Dashboard from './pages/supervisor/Dashboard'
+import ManageClasses from './pages/supervisor/ManageClasses'
+import ManageMembers from './pages/supervisor/ManageMembers'
+
+
+//imports for shared pages
+import Information from './pages/shared/Information'
+import Settings from './pages/shared/Settings'
+
+
+
+
 // importing layout
 import GeneralLayout from './layouts/generalLayout'
+import DashboardLayout from './layouts/DashboardLayout'
 
 function App() {
 
@@ -30,6 +44,14 @@ function App() {
           <Route path='/programs' element={<Programs />} />
           <Route path='/membership' element={<Membership />} />
           <Route path='/blogs' element={<Blogs />} />
+        </Route>
+
+        <Route path='supervisor' element={<DashboardLayout />}>
+          <Route path='' element={<Dashboard/>}/>
+          <Route path='classes' element={<ManageClasses/>}/>
+          <Route path='members' element={<ManageMembers/>}/>
+          <Route path='settings' element={<Settings/>}/>
+          <Route path='information' element={<Information/>}/>
         </Route>
 
         <Route path='*' element={<ErrorPage />} />

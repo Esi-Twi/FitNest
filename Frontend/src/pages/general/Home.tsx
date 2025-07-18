@@ -1,11 +1,11 @@
 
 
-import Hero from "../../components/Home/Hero";
-import About from "../../components/Home/About";
-import ChooseUs from "../../components/Home/ChooseUs";
-import ClassOverview from "../../components/Home/ClassOverview";
-import HeroGallery from "../../components/Home/HeroGallery";
-import Testimonials from "../../components/Home/Testimonials";
+import Hero from "./Home/Hero";
+import About from "./Home/About";
+import ChooseUs from "./Home/ChooseUs";
+import ClassOverview from "./Home/ClassOverview";
+import HeroGallery from "./Home/HeroGallery";
+import Testimonials from "./Home/Testimonials";
 
 
 
