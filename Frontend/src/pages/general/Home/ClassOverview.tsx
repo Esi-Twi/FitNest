@@ -17,7 +17,7 @@ const ClassOverview: React.FC<IClassOverviewProps> = () => {
             <p>Build power with compound lifts and full-body focus</p>
           </div>
 
-          <p className='class-badge'>🔥Popular</p>
+          <p className='class-badge'>🔥 Popular</p>
         </div>
 
         {/* carousel item */}
@@ -44,7 +44,7 @@ const ClassOverview: React.FC<IClassOverviewProps> = () => {
             <p>Train like a pro - build speed, footwork and confidence</p>
           </div>
 
-          <p className='class-badge'>🔥Popular</p>
+          <p className='class-badge'>🔥 Popular</p>
         </div>
       </div>
 

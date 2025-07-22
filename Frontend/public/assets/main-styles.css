@@ -13,7 +13,7 @@
     --emerald-green: #10B981;
     --soft-warning: #EF4444;
     --body-text: #111827;
-    --muted-text: #9CA3AF;
+    --grayish-text: rgb(136, 136, 136);
 }
 
 @font-face {
@@ -41,6 +41,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--body-text);
     background-color: var(--light-cream);
+    overflow-x: hidden;
 }
 
 button,
@@ -53,10 +54,12 @@ button,
     border-radius: 5px;
     font-weight: bold;
 }
+
 h1 {
     font-family: "Cinzel";
     font-weight: 700;
 }
+
 a {
     text-decoration: none;
 }
@@ -68,53 +71,63 @@ p {
 
 /* -----------header  */
 .header {
-    /* position: absolute; */
+    top: 0;
+    background-color: var(--primary-color) !important;
+    position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     z-index: 100;
-    /* padding: 15px 3%; */
     padding: 5px 3%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 header .active {
     color: var(--light-cream) !important;
 }
+
 .header h1 {
     font-family: "Cinzel";
-    /* color: var(--primary-color); */
+    font-size: 36px;
 }
+
 .header h1 a {
     color: white;
 }
+
 .header-inner {
     display: flex;
     align-items: center;
     gap: 40px;
 }
+
 .header nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 10px;
 }
+
 .header nav ul li {
     list-style: none;
 }
+
 .header nav ul li a {
     color: black;
     font-size: 18px;
     padding: 0 35px;
     font-weight: bold;
 }
+
 .header nav ul li a:hover {
     color: var(--light-cream) !important;
 }
+
 .header-contact {
-    /* background-color: var(--primary-color); */
     background-color: var(--light-cream);
     color: var(--body-text);
     font-size: 18px;
@@ -122,18 +135,13 @@ header .active {
     padding: 5px 25px;
     font-weight: bold;
 }
+
 .header-list a {
     color: var(--body-text) !important;
-    padding: 10px 0; 
+    padding: 10px 0;
 }
-/* when page is scrolled */
-.scrolled {
-    background-color: var(--primary-color) !important;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0 ;
-}
+
+
 
 
 /* -----------home page hero section  */
@@ -187,6 +195,7 @@ header .active {
     align-items: center;
     justify-content: end;
 }
+
 .hero-button a {
     display: flex;
     align-items: center;
@@ -194,12 +203,13 @@ header .active {
     background-color: var(--primary-color);
     width: 150px;
     border-radius: 6px;
-    padding: 0 10px; 
-    gap: 15px; 
+    padding: 0 10px;
+    gap: 15px;
     text-align: center;
 }
+
 .hero-button a p {
-    font-weight: bold; 
+    font-weight: bold;
     font-size: 20px;
     margin-top: 12px;
 }
@@ -223,7 +233,11 @@ header .active {
     background-size: contain;
     border-radius: 7px;
 }
-
+.ab-stars {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 .ab-stars img {
     width: 35px;
 }
@@ -238,10 +252,9 @@ header .active {
 }
 
 .ab-desc-long {
-    color: var(--muted-text);
+    color: var(--grayish-text);
     width: 600px;
     font-size: 15px;
-    margin-top: -12px;
     margin-bottom: 50px;
 }
 
@@ -263,26 +276,25 @@ header .active {
     padding: 0 15px;
 }
 
-.ab-stats div h1 {
-    margin-bottom: -5px;
-}
-
 .ab-stats div p {
     font-family: "Cinzel";
     font-weight: 700;
     color: var(--emerald-green)
 }
+
 /* -----------class overview section home page */
 .class-overview {
     height: 94vh;
     padding: 5vh 13% 8vh 13%;
 }
+
 .class-overview h1 {
     font-family: "Cinzel";
     font-weight: 700;
     font-size: 55px;
     color: var(--emerald-green)
 }
+
 .class-overview-inner {
     display: flex;
     align-items: center;
@@ -290,6 +302,7 @@ header .active {
     gap: 20px;
     margin-top: 15vh;
 }
+
 .overview-carousel {
     background-size: cover;
     background-position-x: center;
@@ -302,119 +315,145 @@ header .active {
     display: flex;
     align-items: end;
 }
+
 .overview-carousel.div1 {
     background-image: url('../assets/images/woman1.jpg');
 }
+
 .overview-carousel.div2 {
     background-image: url('../assets/images/dumbells.jpg');
 }
+
 .overview-carousel.div3 {
     background-image: url('../assets/images/yoga1.jpg');
 }
+
 .overview-carousel.div4 {
     background-image: url('../assets/images/boxing1.jpg');
 }
+
 .overview-carousel div {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 8px;
     padding: 18px 8px 3px 8px;
     height: 10vh;
 }
+
 .overview-carousel div h3 {
     color: var(--primary-color);
     font-size: 20px;
     font-weight: bold;
     margin-bottom: -1px;
 }
+
 .overview-carousel div p {
     color: white;
     font-size: 12px;
 }
+
 .class-badge {
     position: absolute;
-    top: 5px; 
-    left: 4%
+    top: 5px;
+    left: 4%;
+    background-color: var(--primary-color);
+    padding: 3px 12px;
+    border-radius: 3px;
 }
 
 .class-overview .hero-button a {
     width: 260px;
     margin-top: 5vh;
 }
+
 /* -----------choose us section home page */
 .choose-us {
     background-image: url('../assets/images/skipping.jpg');
     background-size: cover;
     background-position: center;
     height: 90vh;
-    color: white; 
+    color: white;
     padding: 10vh 8%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
+
 .choose-us h1 {
     color: var(--primary-color);
     font-size: 64px;
 }
-.choose-us .row .col {
+.c-inner {
+    width: 20%;
+}
+.choose-us .c-outer .c-inner {
     background-color: rgba(119, 109, 206, 0.5);
     border-radius: 8px;
     padding: 15px 10px;
 }
-.choose-us .row .col div:first-child {
-    padding: 10px; 
+
+.choose-us .c-outer .c-inner div:first-child {
+    padding: 10px;
     border-radius: 50%;
-    width: 90px; 
+    width: 90px;
     height: 90px;
     background-color: var(--emerald-green);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.choose-us .row .col img {
+
+.choose-us .c-outer .c-inner img {
     width: 60px;
 }
-.choose-us .row .col div h3 {
+
+.choose-us .c-outer .c-inner div h3 {
     font-size: 20px;
     color: var(--primary-color);
     font-weight: bold;
-    margin-top: 5px ;
+    margin-top: 5px;
 }
-.choose-us .row .col div p {
+
+.choose-us .c-outer .c-inner div p {
     color: white;
     margin-top: -6px;
     font-size: 14px;
 }
+
 /* -----------hero gallery section home page */
 .hero-gallery {
     height: 90vh;
-    padding: 8vh 5%; 
+    padding: 8vh 5%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px; 
+    gap: 20px;
 }
+
 .hero-gallery .v2 {
     width: 640px;
     height: 66vh;
 }
+
 .hero-gallery .v1,
 .hero-gallery .v3 {
     width: 300px;
 }
+
 .hero-gallery img:hover {
     transform: scale(1.05);
     transition: all 800ms ease-in-out;
+    cursor: pointer;
 }
 
 /* -----------home page testimonials section  */
 .testimonials {
     height: 80vh;
-    padding: 8vh 8%; 
+    padding: 8vh 8%;
 
 
 }
+
 .testimonials h1 {
     color: var(--emerald-green);
     font-size: 54px;
@@ -429,26 +468,31 @@ header .active {
     justify-content: start;
     position: relative;
 }
+
 .about-hero-info {
     padding: 0 10%;
 }
+
 .about-hero-info h1 {
     font-size: 110px;
     color: var(--emerald-green)
 }
+
 .about-hero-info p {
-    color: var(--charcoal-gray); 
+    color: var(--charcoal-gray);
     font-size: 40px;
 }
+
 .about-hero-info p span {
     color: var(--primary-color);
     font-family: "Cinzel";
     font-weight: 700;
     font-size: 80px;
 }
+
 .about-hero-img {
-    position: absolute; 
-    top: 0; 
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -456,6 +500,7 @@ header .active {
     align-items: center;
     justify-content: center;
 }
+
 .about-hero-img img {
     height: 90%;
     padding-top: 4%;
@@ -465,18 +510,24 @@ header .active {
 /* ------------------------------ footer */
 footer {
     background-color: white;
-    padding: 40px 5%;
     color: var(--body-text);
 }
+
+footer .f-top {
+    padding: 20px 6%;
+}
+
 footer .top {
     margin-left: 3%;
 }
+
 footer .top h1 {
     font-family: "Cinzel";
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 18px;
 }
+
 footer .top input {
     border: none;
     border-bottom: 1px solid black;
@@ -484,43 +535,63 @@ footer .top input {
     font-size: 18px;
     margin-right: 10px;
 }
+
 footer .top div p {
     margin: 0;
 }
+
 footer .main {
     display: flex;
     padding-bottom: 30px;
     gap: 15%;
 }
+
 footer .main .imgs img {
     width: 200px;
     height: 300px;
     margin-right: 10px;
     padding-top: 55px;
 }
+
 footer .main .inner {
     display: flex;
     width: 40%;
     gap: 11%
 }
+
 footer .main .inner ul li {
     list-style-type: none;
     padding: 5px 0;
 }
+
 footer .main .inner ul li a {
     color: var(--body-text);
     font-weight: bold;
     font-size: 18px;
 }
+
 footer .main .follow h4 {
     font-family: "Cinzel";
     color: var(--primary-color)
 }
+
 footer .main .follow img {
     width: 30px;
     margin-right: 15px;
 }
 
+footer .copyright {
+    padding: 17px 0;
+    border-top: 1px solid var(--body-text);
+}
 
+footer .copyright p {
+    text-align: center;
+    color: var(--charcoal-gray);
+    font-size: 18px;
+}
 
-
+footer .copyright p a {
+    color: var(--emerald-green);
+    font-weight: bold;
+}

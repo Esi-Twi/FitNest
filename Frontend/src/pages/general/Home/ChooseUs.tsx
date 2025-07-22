@@ -8,8 +8,8 @@ const ChooseUs: React.FunctionComponent<IChooseUsProps> = () => {
    <div className='choose-us'>
       <h1>WHY CHOOSE US</h1>
 
-      <div className='row gap-4'>
-        <div className='col'>
+      <div className='c-outer flex gap-8'>
+        <div className='c-inner'>
           <div>
             <img src='../../assets/icons/systems.png'/>
           </div>
@@ -20,7 +20,7 @@ const ChooseUs: React.FunctionComponent<IChooseUsProps> = () => {
           </div>
         </div>
 
-         <div className='col'>
+         <div className='c-inner'>
           <div>
             <img src='../../assets/icons/coach.png'/>
           </div>
@@ -31,7 +31,7 @@ const ChooseUs: React.FunctionComponent<IChooseUsProps> = () => {
           </div>
         </div>
 
-         <div className='col'>
+         <div className='c-inner'>
           <div>
             <img src='../../assets/icons/availability.png'/>
           </div>
@@ -42,7 +42,7 @@ const ChooseUs: React.FunctionComponent<IChooseUsProps> = () => {
           </div>
         </div>
 
-         <div className='col'>
+         <div className='c-inner'>
           <div>
             <img src='../../assets/icons/coach.png'/>
           </div>
@@ -53,7 +53,7 @@ const ChooseUs: React.FunctionComponent<IChooseUsProps> = () => {
           </div>
         </div>
 
-         <div className='col'>
+         <div className='c-inner'>
           <div>
             <img src='../../assets/icons/treatment.png'/>
           </div>

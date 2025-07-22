@@ -2,13 +2,13 @@ import { Routes, Route } from 'react-router-dom'
 
 
 // importing pages for general website 
-import Home from './pages/general/Home'
-import About from './pages/general/About'
-import Blogs from './pages/general/Blogs'
-import Contact from './pages/general/Contact'
-import Gallery from './pages/general/Gallery'
-import Membership from './pages/general/Membership'
-import Programs from './pages/general/Programs'
+import Home from './pages/general/HomePage'
+import About from './pages/general/AboutPage'
+import Blogs from './pages/general/BlogsPage'
+import Contact from './pages/general/ContactPage'
+import Gallery from './pages/general/GalleryPage'
+import Membership from './pages/general/MembershipPage'
+import Programs from './pages/general/ProgramsPage'
 import ErrorPage from './pages/ErrorPage'
 
 

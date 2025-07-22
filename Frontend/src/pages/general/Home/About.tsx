@@ -28,17 +28,17 @@ const About = () => {
 
         <div className="ab-stats">
           <div>
-            <h1>50</h1>
+            <h1 className="text-4xl">50</h1>
             <p>Certified Trainers</p>
           </div>
 
           <div>
-            <h1>15</h1>
+            <h1 className="text-4xl">15</h1>
             <p>Years of Experience</p>
           </div>
 
-          <div>
-            <h1>30+</h1>
+          <div> 
+            <h1 className="text-4xl">30+</h1>
             <p>Awards Won</p>
           </div>
         </div>

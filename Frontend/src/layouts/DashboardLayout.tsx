@@ -3,7 +3,7 @@ import * as React from 'react';
 
 
 // components
-import Header from '../components/dashboard/Header';
+import Header from '../components/dashboard/HeaderDash';
 import Sidebar from '../components/dashboard/Sidebar';
 import { Outlet } from 'react-router-dom';
 

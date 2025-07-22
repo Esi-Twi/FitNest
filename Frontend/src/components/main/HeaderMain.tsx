@@ -3,20 +3,10 @@ import { useState, useEffect } from 'react';
 
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTrigger = window.innerHeight * 0.2
-      setIsScrolled(window.scrollY > scrollTrigger)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
 
   return (
-    <header className={`header scrolled`}>
+    <header className='header'>
       <h1><Link to='/'>FitNest</Link></h1>
 
       <div className="header-inner">
