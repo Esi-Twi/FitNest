@@ -450,8 +450,10 @@ header .active {
 .testimonials {
     height: 80vh;
     padding: 8vh 8%;
-
-
+    width: 100%;
+}
+.carousel {
+    
 }
 
 .testimonials h1 {
