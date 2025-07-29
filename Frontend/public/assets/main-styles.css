@@ -452,8 +452,12 @@ header .active {
     padding: 8vh 8%;
     width: 100%;
 }
-.carousel {
-    
+.test-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 .testimonials h1 {
@@ -507,7 +511,77 @@ header .active {
     height: 90%;
     padding-top: 4%;
 }
+/* ----------- story section */
+.abpage-story {
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.abpage-story-inner {
+    width: 80%;
+}
+.abstory-header {
+    display: flex;
+    align-items: center;
+    gap: 25%;
+}
+.abstory-header .info h1 {
+    font-family: "Cinzel";
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--primary-color)
+}
+.abstory-header .ab-stats div {
+    border: none;
+}
+.abstory-header .ab-stats p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.abpage-down {
+    display: flex;
+    align-items: end;
+    gap: 20%;
+    height: 60%;
+}
+.abpage-down p {
+    font-weight: bold;
+    color: var(--emerald-green);
+    font-size: 18px;
+}
+.abpage-down img {
+    height: 45vh;
+}
 
+
+
+/*
+
+.ab-stats {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 10vh;
+}
+
+.ab-stats div:first-child,
+.ab-stats div:nth-child(2) {
+    border-right: 3px solid var(--charcoal-gray);
+}
+
+.ab-stats div {
+    border-radius: 1px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.ab-stats div p {
+    font-family: "Cinzel";
+    font-weight: 700;
+    color: var(--emerald-green)
+}
+*/
 
 /* ------------------------------ footer */
 footer {
