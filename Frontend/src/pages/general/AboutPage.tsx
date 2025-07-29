@@ -1,8 +1,5 @@
 import * as React from 'react';
-
-
-
-
+import coaches from '../../data/coachesLIst'
 
 
 interface IAboutProps {
@@ -65,7 +62,37 @@ const About: React.FC<IAboutProps> = (props) => {
 
 
       {/* -------------coaches section------------ */}
-      coaches
+      <div className='coaches'>
+        <div className='coaches-inner'>
+          {/* coaches intro */}
+          <div className='coaches-intro'>
+            <div>
+              <p>OUR TEAM</p>
+              <h1>Meet the Coaches Who Power FitNest</h1>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nostrum suscipit quas inventore? Mollitia soluta dignissimos molestias enim, labore quod nihil eligendi sapiente officia temporibus nemo in quae dicta ad.</p>
+          </div>
+
+          {/* list of coaches */}
+          <div className='coaches-list'>
+            {coaches.map((coach) => {
+              return <div className='coach'>
+                <img src={coach.img} />
+
+                <div className='coach-details'>
+                  <h2>{coach.name}</h2>
+                  <p>{coach.role}</p>
+                  <p>{coach.bio}</p>
+                  <p>{coach.certification}</p>
+                </div>
+              </div>
+            })}
+          </div>
+        </div>
+      </div>
+
+
       {/* -------------action section------------ */}
       action
       {/* -------------mission section------------ */}

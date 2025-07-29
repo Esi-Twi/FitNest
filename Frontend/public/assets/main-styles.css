@@ -553,35 +553,95 @@ header .active {
 .abpage-down img {
     height: 45vh;
 }
-
-
-
-/*
-
-.ab-stats {
+/* --------------------- coaches section */
+.coaches {
     display: flex;
     align-items: center;
-    justify-content: start;
-    margin-top: 10vh;
+    justify-content: center;
+    height: 90vh;
+}
+.coaches-inner {
+    width: 80%;
+    display: flex;
+    height: 90%;
+}
+.coaches-intro {
+    width: 30%;
+    background-color: var(--emerald-green);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.coaches-intro div p {
+    background-color: var(--primary-color);
+    padding: 4px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+}
+.coaches-intro div h1 {
+    color: white; 
+    font-size: 30px;
+    margin-top: 15px;
+}
+.coaches-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+    width: 65%;
+}
+.coach {
+    width: 45%;
+    height: 48%;
+    border-radius: 14px;
+    position: relative;
+    overflow: hidden;
+}
+.coach img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.coach-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 9vh;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+.coach-details:hover {
+    height: 23vh;
+}
+.coach-details h2 {
+    font-weight: bold;
+    font-size: 18px;
+}
+.coach-details p:nth-child(2) {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--charcoal-gray); 
+    margin-bottom: 10px;
+}
+.coach-details p:nth-child(3) {
+    font-size: 13px;
+}
+.coach-details p:nth-child(4) {
+    font-weight: bold;
+    color: white;
+    margin-top: 4px;
 }
 
-.ab-stats div:first-child,
-.ab-stats div:nth-child(2) {
-    border-right: 3px solid var(--charcoal-gray);
-}
-
-.ab-stats div {
-    border-radius: 1px;
-    text-align: center;
-    padding: 0 15px;
-}
-
-.ab-stats div p {
-    font-family: "Cinzel";
-    font-weight: 700;
-    color: var(--emerald-green)
-}
-*/
 
 /* ------------------------------ footer */
 footer {
