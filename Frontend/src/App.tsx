@@ -47,7 +47,7 @@ function App() {
         </Route>
 
         <Route path='supervisor' element={<DashboardLayout />}>
-          <Route path='' element={<Dashboard/>}/>
+          {/* <Route path='/dashboard' element={<Dashboard/>}/> */}
           <Route path='classes' element={<ManageClasses/>}/>
           <Route path='members' element={<ManageMembers/>}/>
           <Route path='settings' element={<Settings/>}/>

@@ -1,15 +1,11 @@
-
-
 import { Link } from "react-router-dom";
+// import  Slider  from 'react-slick';
+import Slider from 'react-slick'
 
-import { Card, CardContent } from "@/components/ui/card"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 const Home = () => {
   const testimonials = [
@@ -54,6 +50,14 @@ const Home = () => {
         "I’ve lost 15kg in 3 months thanks to personalized coaching. The team genuinely cares about your progress.",
     },
   ];
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   return (
     <div>
@@ -248,41 +252,31 @@ const Home = () => {
         <h1>WHAT OUR MEMBERS SAY</h1>
 
         {/* carousel */}
-        <div className="test-carousel">
-          <Carousel className="w-100 max-w-xs">
-            <CarouselContent>
-              {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem key={index}>
-                  <div className="p-1">
-                    <Card>
-                      <CardContent className="flex aspect-square items-center justify-center p-6">
-                        <img src="../../assets/images/boxing1.jpg" />
-
-                        <div>
-                          <h2>Name</h2>
-
-                          <div className="ab-stars">
-                            <img src="../../assets/icons/star.png" />
-                            <img src="../../assets/icons/star.png" />
-                            <img src="../../assets/icons/star.png" />
-                            <img src="../../assets/icons/star.png" />
-                            <img src="../../assets/icons/star.png" />
-                          </div>
-
-                          <h4>Strength training</h4>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat aspernatur laborum nisi. Deleniti, hic nemo dolor quisquam accusantium optio sint iure architecto numquam maiores ipsa impedit accusamus minima eos.</p>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
+        <div className="">
+          <Slider {...settings}>
+            <div className="bg-amber-300">
+              <h3 className="text-3xl">1</h3>
+            </div>
+            <div>
+              <h3>2</h3>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+            <div>
+              <h3>4</h3>
+            </div>
+            <div>
+              <h3>5</h3>
+            </div>
+            <div>
+              <h3>6</h3>
+            </div>
+          </Slider>
         </div>
       </div>
+
+
 
     </div>
     // <>
