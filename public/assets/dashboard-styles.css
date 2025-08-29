@@ -1,0 +1,101 @@
+
+
+:root {
+    --primary-color: #FACC15;
+    --charcoal-gray: #1F2937;
+    --light-cream: #FFFBEB;
+    --sky-blue: #38BDF8;
+    --emerald-green: #10B981;
+    --soft-warning: #EF4444;
+    --body-text: #111827;
+    --muted-text: #9CA3AF;
+    --ft-white: white;
+    --ft-black: black;
+}
+
+@font-face {
+    font-family: "Cinzel";
+    src: url('./fonts/CinzelDecorative-Black.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cinzel";
+    src: url('./fonts/CinzelDecorative-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cinzel";
+    src: url('./fonts/CinzelDecorative-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* --------------------------------header---------- */
+.db-header {
+    background-color: var(--ft-white);
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+    width: 100%;
+}
+.db-header .name {
+    width: 25%;
+    border-right: 1px solid var(--charcoal-gray);
+}
+.db-header .name h1 {
+    color: var(--primary-color);
+    text-align: center;
+}
+.h-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2%;
+}
+.h-main h3 {
+    font-size: 29px;
+    font-weight: bold;
+}
+.h-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.h-profile img {
+    width: 50px;
+    border-radius: 4px;
+}
+.h-settings {
+    display: flex;
+    align-items: center;
+}
+.h-settings .icons {
+    cursor: pointer;
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.h-settings .icons img {
+    width: 37px;
+}
+.h-profile div {
+    padding-top: 15px;
+}
+.h-profile h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.h-profile p {
+    font-size: 14px;
+    color: var(--body-text);
+    margin-top:  -9px;
+}
+
+
+
+
